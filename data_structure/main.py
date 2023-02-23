@@ -174,3 +174,8 @@
 # my_set_2 = {2, 3, 4}
 # print(my_set_1.union(my_set_2)) #uniunea distre seturi
 # print(my_set_1.intersection(my_set_2))
+
+# Exercitiu propriu
+# list1 = [1, 2, 3, 4]
+# list2 = [i**2 for i in list1]
+# print(list2)
