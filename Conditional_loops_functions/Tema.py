@@ -1,4 +1,4 @@
-max_attempts = 5
+max_attempts = 10
 attempt = 1
 
 while attempt <= max_attempts:
@@ -17,4 +17,4 @@ while attempt <= max_attempts:
     break
 
 else:
-    print("You have exceeded the maximum number of attempts. (5 attempts)")
+    print("You have exceedeed the maximum number of attempts:", max_attempts)
