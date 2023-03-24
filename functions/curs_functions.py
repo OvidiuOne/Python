@@ -377,10 +377,51 @@
 # print('my_list', my_list)
 
 
+#Cursul 3
+#
+# def my_function():
+#     pass
+
+# numbers = [6, 8, 5, 2, 4, 2, 3 ]
+# sorted_numbers = sorted(numbers)
+# print(sorted_numbers)
+# sorted_numbers = sorted(numbers, reverse=True)
+# print(sorted_numbers)
+
+# def get_student_grade(student: dict) -> int:  #renuntam la definirea unei functii
+#     return student["grade"]
+
+# ##get_student_grade = lambda student: student["grade"] #functii anonime
+#
+# students = [
+#     {"name": "A", "grade": 6},
+#     {"name": "B", "grade": 8},
+#     {"name": "C", "grade": 5},
+#     {"name": "D", "grade": 2},
+#     {"name": "E", "grade": 4},
+#     {"name": "F", "grade": 2},
+#     {"name": "G", "grade": 3},
+# ]
+# sorted_students = sorted(students, key=lambda student: student["grade"]) # va exista in memorie cand e intalnita. # student este o variabila = x
+# # putem avea mai multe valori *args, **kwargs
+# # doar returneaza
+# print('sorted_students', sorted_students)
+#
+# ## Returnez valoarea: sorted_students [{'name': 'D', 'grade': 2}, {'name': 'F', 'grade': 2}, {'name': 'G', 'grade': 3}, {'name': 'E', 'grade': 4}, {'name': 'C', 'grade': 5}, {'name': 'A', 'grade': 6}, {'name': 'B', 'grade': 8}]
+#
+
+¿
+### unde putem folosi lambda sau nu - in fct de context ###
+
+########
+##### Pauza #######
+### 2 algoritmi care calculeaza cate numere pare sunt in segvente
 
 
 
+# my_sequence = range()
 
+###########  Module si pachete
 
 
 
