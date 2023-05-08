@@ -1,0 +1,16 @@
+[
+  {
+    "#": "6",
+    "brand": "Dacia",
+    "model": "Logan",
+    "hp": "90",
+    "price": "800"
+  },
+  {
+    "#": "7",
+    "brand": "Dacia",
+    "model": "Duster",
+    "hp": "115",
+    "price": "1010"
+  }
+]

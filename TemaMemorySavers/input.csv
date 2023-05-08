@@ -1,0 +1,17 @@
+#,brand,model,hp,price
+1,Audi,A3,136,999
+2,Audi,A4,160,1563
+3,Audi,A6,190,4650
+4,BMW,320,150,1460
+5,BMW,550,346,9800
+6,Dacia,Logan,90,800
+7,Dacia,Duster,115,1010
+8,Honda,Civic,180,2400
+9,Honda,CRV,190,3100
+10,Mercedes,C220,130,1120
+11,Mercedes,E300,204,6800
+12,Mercedes,ML500,380,11250
+13,Toyota,Yaris,85,950
+14,Toyota,Corolla,105,1600
+15,Toyota,Rav4,190,6890
+16,BMW,Test,900,556890
