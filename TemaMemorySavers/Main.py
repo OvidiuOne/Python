@@ -1,8 +1,14 @@
 import csv
 import json
 import os
+import shutil
+
+##OUTPUT_DIR = "output_data"
 
 if __name__ == "__main__":
+    shutil.rmtree("output_data", ignore_errors=True)
+    # if os.path.exists("output_data")
+    #     shutil.rmtree("output_data")  ##
     with open("input.csv", "r") as f:
         dict_reader = csv.DictReader(f)
         cars = list(dict_reader)
@@ -17,18 +23,28 @@ if __name__ == "__main__":
     if not os.path.exists("output_data"):
         os.makedirs("output_data")
 
-    with open("output_data/slow_cars.json", "w") as f:
-        json.dump(slow_cars, f, indent=2)
-    with open("output_data/fast_cars.json", "w") as f:
-        json.dump(fast_cars, f, indent=2)
-    with open("output_data/sport_cars.json", "w") as f:
-        json.dump(sport_cars, f, indent=2)
-    with open("output_data/cheap_cars.json", "w") as f:
-        json.dump(cheap_cars, f, indent=2)
-    with open("output_data/medium_cars.json", "w") as f:
-        json.dump(medium_cars, f, indent=2)
-    with open("output_data/expensive_cars.json", "w") as f:
-        json.dump(expensive_cars, f, indent=2)
+    with open("output_data/slow_cars.json", "w") as f1, open("output_data/fast_cars.json", "w") as f2, \
+            open("output_data/sport_cars.json", "w") as f3, open("output_data/cheap_cars.json", "w") as f4, \
+            open("output_data/medium_cars.json", "w") as f5, open("output_data/expensive_cars.json", "w") as f6:
+        json.dump(slow_cars, f1, indent=2)
+        json.dump(fast_cars, f2, indent=2)
+        json.dump(sport_cars, f3, indent=2)
+        json.dump(sport_cars, f4, indent=2)
+        json.dump(sport_cars, f5, indent=2)
+        json.dump(sport_cars, f6, indent=2)
+
+    # with open("output_data/slow_cars.json", "w") as f:
+    #     json.dump(slow_cars, f, indent=2)
+    # with open("output_data/fast_cars.json", "w") as f:
+    #     json.dump(fast_cars, f, indent=2)
+    # with open("output_data/sport_cars.json", "w") as f:
+    #     json.dump(sport_cars, f, indent=2)
+    # with open("output_data/cheap_cars.json", "w") as f:
+    #     json.dump(cheap_cars, f, indent=2)
+    # with open("output_data/medium_cars.json", "w") as f:
+    #     json.dump(medium_cars, f, indent=2)
+    # with open("output_data/expensive_cars.json", "w") as f:
+    #     json.dump(expensive_cars, f, indent=2)
 
     audi = [car for car in cars if car.get("brand", 0) == "Audi"]
     with open("output_data/audi.json", "w") as f:
